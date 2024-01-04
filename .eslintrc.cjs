@@ -8,7 +8,10 @@ module.exports = {
         "astro/astro": true,
         es2020: true,
       },
-      parser: "astro-eslint-parser",
+      parser: [
+        "astro-eslint-parser",
+        "babel-eslint"
+      ],
       parserOptions: {
         parser: "@typescript-eslint/parser",
         extraFileExtensions: [".astro"],
