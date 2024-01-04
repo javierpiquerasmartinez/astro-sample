@@ -1,15 +1,17 @@
 ---
+import '../styles/global.css';
+import Navigation from '../components/Navigation.astro';
+
 const pageTitle = 'Hi, I\'m Javier Piqueras 👨🏻‍💻'
 ---
 <html>
 	<head>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.min.css">
 		<meta charset="UTF-8">
 	</head>
 	<body>
-		<a href="/">Home</a>
-    <a href="/about/">About</a>
-    <a href="/blog/">Blog</a>
 		<main>
+			<Navigation />
 			<h1>{pageTitle}</h1>
 		</main>
 	</body>
