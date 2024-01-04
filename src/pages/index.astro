@@ -1,18 +1,22 @@
 ---
 import '../styles/global.css';
-import Navigation from '../components/Navigation.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 
 const pageTitle = 'Hi, I\'m Javier Piqueras 👨🏻‍💻'
 ---
 <html>
 	<head>
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.min.css">
 		<meta charset="UTF-8">
 	</head>
 	<body>
 		<main>
-			<Navigation />
+			<Header />
 			<h1>{pageTitle}</h1>
 		</main>
+		<Footer />
+		<script>
+			import "../scripts/menu.js";
+		</script>
 	</body>
 </html>
